@@ -5,9 +5,14 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 import { ExploreContainerComponent } from './explore-container.component';
-
+//import { CalendarioUcbPackageModule } from 'calendario-ucb-package';
 @NgModule({
-  imports: [ CommonModule, FormsModule, IonicModule],
+  imports: [ 
+    CommonModule, 
+    FormsModule, 
+    IonicModule, 
+    //CalendarioUcbPackageModule
+  ],
   declarations: [ExploreContainerComponent],
   exports: [ExploreContainerComponent]
 })
