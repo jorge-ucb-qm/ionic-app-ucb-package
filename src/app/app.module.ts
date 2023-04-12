@@ -3,9 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
 
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
+import { CalendarioUcbPackageModule } from 'calendario-ucb-package';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 /* import { CalendarioUCBModule } from 'calendario-ucb-package/src/app/app.module';
 import { CalendarioUCBComponent } from 'calendario-ucb-package/src/app/app.component'; */
@@ -18,7 +21,8 @@ import { CalendarioUCBComponent } from 'calendario-ucb-package/src/app/app.compo
     BrowserModule, 
     IonicModule.forRoot(), 
     AppRoutingModule, 
-    //CalendarioUCBModule
+    CalendarioUcbPackageModule,
+    BrowserAnimationsModule
   ],
   entryComponents: [
     //CalendarioUCBComponent
